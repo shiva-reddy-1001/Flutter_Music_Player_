@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-//4.Define seperate list widget and use it as template
 Widget customListView({
   String title,
   String singer,
@@ -15,8 +14,8 @@ Widget customListView({
           children: [
             Stack(children: [
               Container(
-                height: 80.0,
-                width: 80.0,
+                height: 60.0,
+                width: 60.0,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.network(
@@ -26,8 +25,8 @@ Widget customListView({
                 ),
               ),
               Container(
-                height: 80.0,
-                width: 80.0,
+                height: 60.0,
+                width: 60.0,
                 child: Icon(
                   Icons.play_circle_filled,
                   color: Colors.white.withOpacity(0.7),
@@ -56,11 +55,6 @@ Widget customListView({
               ],
             ),
             Spacer(),
-            Icon(
-              Icons.more_horiz,
-              color: Colors.white.withOpacity(0.6),
-              size: 32.0,
-            )
           ],
         ),
       ),
